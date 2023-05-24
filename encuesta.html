@@ -1,0 +1,100 @@
+<!--Generar los códigos HTML y CSS de 3 páginas Web con estas características (como mínimo esto, si agregan no hay problema, pero no pueden faltar estos):
+
+Página 3
+Nombre:  encuesta.html
+
+En esta Web los visitantes podrán responder una encuesta en relación a los temas desarrollados en la página 1:
+
+-Estructura HTML completa (deben incluir doctype, meta, html, head, body, etc.)
+-Aplicar todos los estilos CSS que sean necesarios para que la Web quede lo mejor posible. Debe ser un archivo especifico para este HTML.
+-Link al sitio principal para volver a la página 1, este debe abrir en la misma ventana actual
+-Pie de página con los datos del alumno autor de sitio
+-Crear por lo menos un formulario, agregando las etiquetas (labels) correspondientes,  aplicando como mínimo estos controles:
+4 controles para ingreso de textos
+3 con opciones tipo radio
+3 con selecciones tipo checkbox 
+1 combo de opciones tipo datalist (se recomienda colocar los libros/películas/series que están en la página 1)
+1 texto largo tipo textarea
+1 botón
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styloEncuesta.css">
+    <link rel="shortcut icon" href="Src/book_comic_dc_flash_movie_icon_183187.png">
+    <title>MVPelis</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>MVPelis</h1>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#peliculas">Peliculas</a></li>
+                    <li>Buscar<input type="search" name="" id=""></li>
+            </ul>
+        </nav>
+    </header>
+    </section>
+    <div class="conteinerForm">
+
+        <h3> Encuesta MVPelis </h3>
+        <form>
+
+            <label for="nombre"> Nombre: </label>
+            <input id="nombre" type="text" name="nombre"> <br>
+            <label for="apellido"> Apellido: </label>
+            <input id="apellido" type="text" name="apellido"> <br>
+            <label for="edad"> Edad : </label>
+            <input id="edad" type="text" name="edad"> <br>
+            <label for="email"> email: </label>
+            <input id="email" type="text" name="email"> <br> <br>
+
+
+            <p> Gustos Personales</p>
+            <input id="rb1" type="radio" name="gustos">
+            <label for="rb1"> Peliculas </label> <br>
+            <input id="rb2" type="radio" name="gustos">
+            <label for="rb2"> Series </label><br>
+            <input id="rb3" type="radio" name="gustos">
+            <label for="rb3"> Peliculas y Series </label> <br> <br>
+
+            <p> Peliculas Legendarias</p>
+            <input id="cb1" type="checkbox" name="leyendas">
+            <label for="cb1"> El Padrino </label> <br>
+            <input id="cb2" type="checkbox" name="leyendas">
+            <label for="cb2"> Rush Hour </label> <br>
+            <input id="cb3" type="checkbox" name="leyendas">
+            <label for="cb3"> Titanic </label> <br> <br>
+
+            <label for="pelicula"> Mejor Recomendacion: </label>
+            <input list="peliculas" id="pelicula" name="pelicula"> <br>
+
+            <datalist id="peliculas">
+                <option value="Guardianes de la galaxia vol.3">
+                <option value="Resident Evil">
+                <option value="Star Wars episodio III: La Venganza de los Sith">
+                <option value="Iron Man 3">
+                <option value="El Hombre de la Tierra">
+                <option value="El Lobo de Wall Street">
+                <option value="Rush Hour">
+                <option value="El Robo del Siglo">
+            </datalist> <br>
+
+            <label for="top"> Cuales son tus peliculas favoritas: </label> <br>
+            <textarea id="top" name="top" rows="5" cols="33"></textarea> <br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <footer>Creado por Yamil Escobal © Todos los derechos reservados. Los izquierdos también.</footer>
+</body>
+
+</html>

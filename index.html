@@ -1,0 +1,435 @@
+<!--Generar los códigos HTML y CSS de 3 páginas Web con estas características (como mínimo esto, si agregan no hay problema, pero no pueden faltar
+     estos):
+
+Página 1
+Nombre:  index.html
+Armar una Web donde recomienden: Libros o Películas o Series (con uno de los tres tipos está bien pero con varias recomendaciones, por lo menos 8), 
+aplicando:
+
+-Estructura completa de HTML5 (además de Doctype, meta, html, head, body, aplicar div y span, aplicar todos los que vimos semánticos para estructuras
+ -HTML5 como header, nav, article, section, footer, details, aside, etc.)
+-Un menú tipo nav que nos lleve a diferentes zonas dentro de la Web
+-Imágenes con textos alternativos
+-Links en imágenes. Estos links deben abrir en pestañas nuevas
+-Por lo menos un video desde un archivo local (adjunto en el rar o zip) con controles en pantalla
+-Por lo menos un video tipo iframe de Youtube
+-Por lo menos un audio (mostrando los controles)
+-La primera recomendación debe tener un link a la página 2 que pedimos mas abajo, abriendo en la misma pestaña actual.
+-Se debe incluir un link "Encuesta" que lleve a la página 3 que pedimos mas abajo, abriendo en una pestaña nueva.
+-En el pie de página deben estar los datos del alumno autor de sitio
+-Aplicar todos los estilos CSS que sean necesarios para que la Web quede lo mejor posible. Debe ser un archivo especifico para este HTML.
+
+
+-->
+<!DOCTYPE html5>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styloIndex.css">
+        <link rel="shortcut icon" href="Src/book_comic_dc_flash_movie_icon_183187.png">
+        <title>MVPelis</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+            <h1>MVPelis</h1>
+            
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#peliculas">Peliculas</a></li>
+                    <li><a href="encuesta.html" target="_blank" rel="noopener noreferrer">Encuesta</a>
+                    <li>Buscar<input type="search" name="" id=""></li>
+                </ul>
+            </nav>
+    
+        </header>
+        <div class="containerSection">
+            <section id="peliculas">
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">El Robo del siglo</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <a href="desarrollo.html"><img src="https://www.cronista.com/files/image/305/305918/5ffe2d6e14d9c.jpg" 
+                                                                   height="500"
+                                                                   width="661"
+                                                                   alt="Ver la review completa" 
+                                                                   title="Ver la review completa"></a>
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>Un grupo de delincuentes Argentinos se juntan para hacer algo que hasta el momento nunca se hizo, 
+                                                combinar dos modalidades de robo para perpetrar unas de las mejores simulaciones del mundo haciendose
+                                                 con todo el dinero de el banco rio de acassuso.</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src="src/ringtones-los-simuladores.mp3"></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <video controls
+                                               src="src/El_Robo_del_Siglo_-_Trailer_Oficial_Espanol_Latino720P_HD.mp4" 
+                                               type="video/mp4"
+                                               width="504" 
+                                               height="282" 
+                                               autoplay>
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+
+        <div class="containerSection">
+            <section>
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">Guardianes de la Galaxia Vol.3</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <img src="https://es.web.img2.acsta.net/r_1280_720/pictures/23/02/13/09/04/5672474.jpg" 
+                                         alt="Guardianes de la galaxia vol.3" 
+                                         title="Guardianes de la galaxia vol.3">
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>Los Guardianes de la Galaxia se están adaptando a la vida en Knowhere cuando partes del pasado de
+                                               Rocket resurgen. Para protegerlo, Peter Quill debe liderar a los Guardianes, junto con su nuevo miembro,
+                                               Cosmo el perro espacial, en una peligrosa misión que podría conducir a la disolución del equipo actual</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src=""></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <iframe 
+                                            width="504" 
+                                            height="282" 
+                                            src="https://www.youtube.com/embed/sinstLBy9l8" 
+                                            title="Guardianes de la Galaxia Vol. 3 | Tráiler Oficial | Doblado con Subtítulos Descriptivos" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+        <div class="containerSection">
+            <section>
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">Resident Evil</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <img src="https://www.ecartelera.com/carteles/2500/2515/001_m.jpg" 
+                                         alt="Resident Evil" 
+                                         title="Resident Evil">
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>Resident Evil (conocida como Resident Evil: El huésped maldito en Hispanoamérica) es una película de
+                                               acción y ciencia ficción de 2002 dirigida por Paul W. S. Anderson y protagonizada por Milla Jovovich. 
+                                               Basada en el videojuego de Capcom del mismo nombre de 1996, la película es una coproducción británica, 
+                                               estadounidense, francesa y alemana. La película fue conocida en Japón como Biohazard</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src=""></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <iframe width="504" 
+                                                height="282" 
+                                                src="https://www.youtube.com/embed/HhBAIDHvRTc" 
+                                                title="RESIDENT EVIL [2002] - Official Trailer (HD)" 
+                                                frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+        <div class="containerSection">
+            <section>
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">Star Wars EpisodioIII: La Venganza de los Sith</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <img src="https://es.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/75/58/20065302.jpg" 
+                                         height="500"
+                                         width="661"
+                                         alt="Star Wars EpisodioIII: La Venganza de los Sith" 
+                                         title="Star Wars EpisodioIII: La Venganza de los Sith">
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>Hace mucho tiempo en una galaxia muy, muy lejana [...] ¡Guerra! La República se desmorona bajo 
+                                               los ataques del despiadado Conde Dooku, señor de los Sith. Hay héroes en ambos bandos. 
+                                               El mal está por doquier. [...] En una maniobra audaz, el diabólico líder droide, General Grievous,
+                                               ha entrado a la capital de la República y secuestrado al canciller Palpatine, líder del Senado Galáctico.
+                                               [...] Mientras el Ejército Droide Separatista trata de huir de la asediada capital con su valioso rehén,
+                                               dos caballeros Jedi dirigen una misión desesperada para rescatar al canciller cautivo...</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src=""></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <iframe width="504" 
+                                                height="282" 
+                                                src="https://www.youtube.com/embed/d3XN49jmmGM" 
+                                                title="Star Wars Episodio III: La Venganza de los Sith. Trailer HD Audio Latino." 
+                                                frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+        <div class="containerSection">
+            <section>
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">El Hombre de la Tierra</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <img src="https://www.ecartelera.com/carteles/6300/6394/001_p.jpg" 
+                                         height="500"
+                                         width="661"
+                                         alt="El Hombre de la Tierra" 
+                                         title="El Hombre de la Tierra">
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>El profesor de historia John Oldman se encuentra colocando sus pertenencias en una camioneta. 
+                                               Mientras prepara la mudanza, aparecen cuatro colegas de la universidad para darle una inesperada
+                                               fiesta de despedida. Son el biólogo Harry, la experta en literatura cristiana Edith, el antropólogo desmorona
+                                               y la historiadora Sandy. A medida que se acercan a John, Edith descubre un cuadro de Vincent van Gogh con la
+                                               inscripción «Para mi amigo Jacques Borne» escrita en la parte trasera en francés. Una vez que dentro de la 
+                                               casa, se proponen averiguar por qué se quiere marchar tan rápido, sin despedirse, tan solo hace dos días que 
+                                               dejó el trabajo y lleva diez años con ellos en la universidad. El porque es mucho mas profundo de lo que todos creen</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src=""></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <iframe width="504" 
+                                                height="282" 
+                                                src="https://www.youtube.com/embed/qDi6r5gS000" 
+                                                title="The Man from Earth - Trailer V.O Subtitulado" 
+                                                frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+        <div class="containerSection">
+            <section>
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">Rush Hour</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <img src="https://www.ecartelera.com/carteles/8000/8083/001_m.jpg" 
+                                         alt="Rush Hour" 
+                                         title="Rush Hour">
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>La película comienza cuando el último día del dominio británico sobre Hong Kong, el detective Inspector Lee (Chan) dirige un inmenso 
+                                               operativo policial para capturar al misterioso jefe de las tríadas conocido como Juntao. Sin embargo, Lee solo encuentra a Sang, mano 
+                                               derecha de Juntao quien logra escapar en una lancha de motor mientras Lee logra capturar a la mayoría de sus cómplices y recuperar varias
+                                               piezas históricas china de altísimo valor robadas antes por Juntao. Posteriormente Lee celebra la victoria con sus superiores Solon Han, 
+                                               el cónsul chino y Thomas Griffin, último gobernador militar británico en Hong Kong. A su vez, Lee se despide de su alumna de artes marciales
+                                               Soo Yung, ya que su padre el cónsul Han iría en misión diplomática a Estados Unidos, asegurándole a la niña que Estados Unidos es un país amigo. 
+                                               Lee tendra que salvara la niña acompañado por Carter un Policia de Nueva York</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src=""></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <iframe width="504" 
+                                                height="282" 
+                                                src="https://www.youtube.com/embed/JMiFsFQcFLE" 
+                                                title="Rush Hour (1998) Official Trailer - Jackie Chan, Chris Tucker Movie HD" 
+                                                frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+        <div class="containerSection">
+            <section>
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">El Lobo de Wall Street</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <img src="https://www.ecartelera.com/carteles/4700/4729/001_m.jpg" 
+                                         alt="El Lobo de Wall Street" 
+                                         title="El Lobo de Wall Street">
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>La película empieza con un comercial de televisión narrado por Gene Hackman donde promueve la firma
+                                               Stratton Oakmont. La escena corta a la sede de la misma compañía, donde muchas personas andan drogadas 
+                                               y ebrias. Jordan Belfort luego narra cómo logró tener una gran esposa, una gran mansión en Long Island,
+                                               un gran Ferrari y volverse multimillonario.</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src=""></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <iframe width="504" 
+                                                height="282" 
+                                                src="https://www.youtube.com/embed/PaAvUOXUohk" 
+                                                title="El Lobo de Wallstreet Trailer Oficial Subtitulado (2014)" 
+                                                frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+        <div class="containerSection">
+            <section>
+                
+                    <article>
+                        <div class="containerArticle">
+                            <div class="containerSubtitulo">
+                                <h2 class="subtitulo">Iron Man 3</h2>
+                            </div>
+                            <div style=" display: block;">
+                                <div class="containerCartelera">
+                                    <img src="https://lanacionar-la-nacion-ar-prod.cdn.arcpublishing.com/resizer/pFZTRZsTWyqH33O8K7-bVQOgevc=/210x300/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/QXHIHQO53FGGPL56CBDI4FEBRE.jpg" 
+                                         height="500"
+                                         width="661"     
+                                         alt="Iron Man 3" 
+                                         title="Iron Man 3">
+                                </div >
+
+                                <div class="containerInformacion">
+                                    <div class="containerDescripcionYAudio">
+                                        <div class="containerDecripcion">
+                                            <p>Después de su presentación, es abordado por un científico lisiado llamado Aldrich Killian, quien busca la 
+                                               ayuda de Tony para su proyecto, A.I.M. Tony le dice que se encontrara con él en la azotea en cinco minutos. Killian, desesperado, espera durante horas, pero el propio Stark no se
+                                               presenta por lo que al parecer Stark le mintió. Tony y Maya Hansen pasan la noche juntos. Ambos tratan
+                                               de arreglar el error fatal de un virus experimental llamado Extremis desarrollado por Maya. En la actualidad, 
+                                               seis meses después de la Batalla de Nueva York, un frecuentado Tony ha construido obsesivamente varios trajes 
+                                               de Iron Man en su mansión, debido al trauma del agujero de gusano lo que en parte le causa ataques de ansiedad
+                                               si alguien le recuerda lo que pasó.</p>
+                                        </div>
+                                        <div class="containerAudio">
+                                            <audio controls src=""></audio>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="containerVideo">
+                                        <iframe width="504" 
+                                                height="282" 
+                                                src="https://www.youtube.com/embed/v725aRx0zIs" 
+                                                title="Iron Man 3 - Trailer Español Latino - FULL HD" 
+                                                frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+            </section>
+        </div>
+        <aside></aside>
+        <footer>
+            <div>
+                <h3>MVPelis</h3>
+                <p>Creado por Yamil Escobal © Todos los derechos reservados. Los izquierdos también.</p>
+            </div>
+        </footer>
+    </body>
+</html>
+
